@@ -3,16 +3,34 @@ const { ApolloServer, gql } = require('apollo-server-express');
 
 const port = process.env.PORT || 4000;
 const typeDefs = gql`
-    type Query{
-    hello: String
+    type Note {
+    id: ID
+    content: String!
+    author: String!    
     }
-`;
-
+    type Query{
+    hello: String!
+    notes: [Note!]
+    note(id: ID!): Note!    
+    }
+    `;
 const resolvers = {
     Query: {
-        hello: () => 'hello world!'
+        hello: () => 'hello world!',
+        notes: () => notes,
+        note: (parent, args) => {
+            return notes.find(note => note.id === args.id);
+        }
     }
 }
+
+let notes = [
+    {id: '1', content: 'aaa', author: 'aaa'},
+    {id: '2', content: 'bbb', author: 'bbb'},
+    {id: '3', content: 'ccc', author: 'ccc'},
+]
+
+
 
 
 //app.get('/', (req, res) => res.send('hello world'));
