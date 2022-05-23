@@ -12,8 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "apollo-server-express": "^3.7.0",
+    "bcrypt": "^5.0.1",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "gravatar": "^1.8.2",
     "mongoose": "^6.3.3"
   }
 }

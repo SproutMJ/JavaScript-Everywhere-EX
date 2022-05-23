@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "graphql-iso-date": "^3.6.1",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
