@@ -1,0 +1,67 @@
+{
+  "name": "notedly-web",
+  "version": "1.0.0",
+  "description": "[WIP] Web code examples for JavaScript Everywhere by Adam Scott, published by O'Reilly Media",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "final": "parcel final/index.html",
+    "deploy:src": "parcel build src/index.html --public-url ./",
+    "deploy:final": "parcel build final/index.html --public-url ./",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javascripteverywhere/web.git"
+  },
+  "keywords": [],
+  "author": "Adam Scott <adam@jseverywhere.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/javascripteverywhere/web/issues"
+  },
+  "homepage": "https://github.com/javascripteverywhere/web#readme",
+  "dependencies": {
+    "@apollo/client": "3.0.0-beta.24",
+    "@types/react": "^18.0.12",
+    "apollo-link-context": "1.0.20",
+    "date-fns": "2.28.0",
+    "graphql": "^14.5.8",
+    "normalize.css": "8.0.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-markdown": "^8.0.3",
+    "react-router-dom": "5.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/node": "^7.17.10",
+    "@babel/plugin-proposal-class-properties": "^7.17.12",
+    "@babel/plugin-transform-runtime": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@testing-library/cypress": "^8.0.3",
+    "babel-core": "6.26.3",
+    "babel-loader": "^8.2.5",
+    "babel-plugin-styled-components": "^2.0.7",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "cypress": "^10.1.0",
+    "eslint": "5.16.0",
+    "eslint-config-prettier": "5.1.0",
+    "eslint-plugin-cypress": "2.7.0",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.16.0",
+    "eslint-plugin-react-hooks": "2.3.0",
+    "graphql-request": "^4.3.0",
+    "parcel": "^2.0.0-rc.0",
+    "prettier": "1.19.1",
+    "process": "^0.11.10",
+    "styled-components": "^5.3.5",
+    "test-data-bot": "0.8.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.9.2"
+  }
+}

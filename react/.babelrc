@@ -1,0 +1,13 @@
+/*{
+  "presets": ["env", "react"],
+  "plugins": ["babel-plugin-styled-components", "transform-object-rest-spread"]
+}*/
+{
+  "presets": [
+    "@babel/react" ,
+    "@babel/env" ,
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties"
+  ]
+}
